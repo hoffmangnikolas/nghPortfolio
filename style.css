@@ -63,8 +63,9 @@ header #main-navigation ul li a:hover {
     min-height: 800px;
     text-align: center;
     background: #555;
-    background-image: url('../website/img/background0.jpg');
+    
     background-size: cover;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 }
 
 .hero-content {
@@ -127,6 +128,10 @@ header #main-navigation ul li a:hover {
     line-height: 1;
 }
 
+.service-box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .service-box img {
     width: 80px;
     margin-bottom: 15px;
@@ -187,4 +192,8 @@ footer img {
     border-radius: 5px;
     width: 80px;
     margin: 0 auto 10px;
+}
+
+footer a:hover {
+    color: #49bf9d!important;
 }
