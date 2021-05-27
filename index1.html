@@ -14,6 +14,45 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+  <!--NAV-->
+  <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color fixed-top">
+  <a class="navbar-brand" href="#">NGH</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Knowledge</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </nav>
   <!--JUMBOTRON-->
   <div class="jumbotron">
     <h1>Nikolas Hoffman</h1>
@@ -35,6 +74,91 @@
       </div>
     </div>
   </div>
+  <!--SKILLS-->
+  <div class="container-fluid text-center">
+    <h2>KNOWLEDGE</h2>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+          <img src="img/react.png" alt="react logo">
+          <h4>React</h4>
+      </div>
+      <div class="col-sm-4">
+          <img src="img/redux1.png" alt="redux logo">
+          <h4>Redux</h4>
+      </div>
+      <div class="col-sm-4">
+          <img src="img/js.png" alt="js logo">
+          <h4>JS6+</h4>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="img/nodejs.png" alt="node.js logo">
+            <h4>Node.js</h4>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/sql1.png" alt="sql logo">
+            <h4>SQL</h4>
+        </div>
+        <div class="col-sm-4">
+            <img src="img/postgresql.png" alt="postgresql logo">
+            <h4>PostgreSQL</h4>
+        </div>
+    </div>
+  </div>
+  <!--CONTACT-->
+  <div class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact me and I'll get back to you within 24 hours.</p>
+        <p>Austin, Texas, US</p>
+        <p>(210) 268-5513</p>
+        <p><hoffmangnikolas@gmail class="com"></hoffmangnikolas@gmail></p>
+      </div>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <br>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comments" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">
+            Send
+          </button> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOOTER-->
+  <!--FOOTER-->
+  <footer id="footer">
+      <a href="https://www.linkedin.com/in/nikolas-hoffman-1723b3153/" style="text-decoration: none; color: #777">
+          <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/hoffmangnikolas" style="text-decoration: none; color: #777">
+          <i class="fab fa-github-square"></i>
+      </a>
+      <a href="https://www.facebook.com/nhoffman24/" style="text-decoration: none; color: #777">
+          <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="mailto:hoffmangnikolas@gmail.com" style="text-decoration: none; color: #777">
+          <i class="fas fa-envelope-square"></i>
+      </a>
+      <br/>
+      <i class="fas fa-glasses"></i>
+      <span><br />&copy;2021 Nikolas Hoffman</span>
+  </footer>
 
 
 
