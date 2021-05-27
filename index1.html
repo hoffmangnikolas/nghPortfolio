@@ -114,12 +114,12 @@
     <div class="row">
       <div class="col-sm-5">
         <p>Contact me and I'll get back to you within 24 hours.</p>
-        <p>Austin, Texas, US</p>
-        <p>(210) 268-5513</p>
-        <p><hoffmangnikolas@gmail class="com"></hoffmangnikolas@gmail></p>
+        <p><i class="fas fa-map-marker-alt"></i> Austin, Texas, US</p>
+        <p><i class="fas fa-mobile-alt"></i> (210) 268-5513</p>
+        <p><i class="far fa-envelope"></i> <hoffmangnikolas@gmail class="com">hoffmangnikolas@gmail.com</hoffmangnikolas@gmail></p>
       </div>
     </div>
-    <div class="col-sm-7">
+    <div class="col-sm-7" role="form" method="post" id="reused_form">
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -129,7 +129,7 @@
         </div>
       </div>
       <br>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comments" rows="5"></textarea>
+      <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5" required></textarea>
       <br>
       <div class="row">
         <div class="col-sm-12 form-group">
@@ -138,6 +138,13 @@
           </button> 
         </div>
       </div>
+    </div>
+    <div id="success_message" style="width:100%; height:100%; display:none;">
+      <h3>Your message was received successfully!</h3>
+    </div>
+    <div id="error_message" style="width:100%; height:100%; display:none;">
+      <h3>Error</h3>
+      Sorry there was an error sending your message.
     </div>
   </div>
   <!--FOOTER-->
