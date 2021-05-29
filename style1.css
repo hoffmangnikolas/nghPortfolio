@@ -43,6 +43,12 @@ body {
     color: #198754;
     font-size: 200px;
   }
+  .responsive {
+    width: 80px;
+    border-radius: 15%;
+    margin-bottom: 15px;
+    height: auto;
+  }
   .thumbnail {
     padding: 0 0 15px 0;
     border: none;
@@ -132,6 +138,26 @@ body {
   .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
+  }
+  .section-header {
+      font-size: 160px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-align: left;
+      z-index: 10;
+      position: relative;
+      line-height: 0.6em;
+      width: 100%;
+      height: auto;
+  }
+  
+  .skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: space-around;
   }
   footer {
     background: #222;
