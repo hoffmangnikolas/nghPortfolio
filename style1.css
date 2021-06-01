@@ -23,6 +23,16 @@ body {
     min-width: 250px;
     height: auto;
     border-radius: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img1 {
+    width: 100%;
+    max-width: 450px;
+    min-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    left: 85px;
   }
   .jumbotron {
     background-color: #198754;
@@ -145,6 +155,7 @@ body {
       font-weight: 800;
       letter-spacing: -0.02em;
       text-align: left;
+      text-transform: lowercase;
       z-index: 10;
       position: relative;
       line-height: 0.6em;
@@ -152,7 +163,7 @@ body {
       height: auto;
   }
   
-  .skills {
+  .skills-area {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -160,6 +171,10 @@ body {
       align-items: center;
       align-content: space-around;
   }
+#contact a:hover {
+  color: #49bf9d!important;
+}
+
   footer {
     background: #222;
     color: #777;

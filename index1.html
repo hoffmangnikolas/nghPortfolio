@@ -14,25 +14,24 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="timelinestyle.css">
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="">
   <!--NAV-->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color navbar-right fixed-top">
-    <a class="navbar-brand" href="#">NGH</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
-      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent-333">
+    
+    
+    <a class="navbar-brand" href="#myPage">NGH</a>
+    <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
       <ul class="navbar-nav d-flex mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Skills</a>
+          <a class="nav-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
       <ul class="navbar-nav d-flex ml-auto nav-flex-icons">
@@ -62,7 +61,7 @@
     </div>
   </div>
   <!--ABOUT-->
-  <div class="container-fluid" style="height: 100vh;">
+  <div id="about" class="container-fluid" style="height: 100vh;">
     <div class="row">
       <div class="col-sm-8">
           <h2 class="section-header">About.</h2>
@@ -70,7 +69,7 @@
           <br>
           <br>
           <br>
-          <h4>I am a full-stack developer based in Austin, TX. </h4>
+          <h4>I am a software developer based in Austin, TX. </h4>
           <p>I approach all aspects of life with a mission-driven mentality 
               that serves as a catalyst for seeking out opportunies that have 
               significant impact. I have a strong desire to problem solve and
@@ -85,13 +84,13 @@
     </div>
   </div>
   <!--SKILLS-->
-  <div class="container-fluid text-center" style="height: 100vh;">
+  <div id="skills" class="container-fluid text-center" style="height: 100vh;">
     <h2 class="section-header">Skills.</h2>
     <br>
     <br>
     <br>
     <br>
-    <div id="skills" class="row">
+    <div id="skills-area" class="row">
       <div class="col-sm-4 skills-box" style="border-radius: 100%">
           <img src="img/react.png" alt="react logo" class="responsive">
           <h4>React</h4>
@@ -120,42 +119,62 @@
             <h4>PostgreSQL</h4>
         </div>
     </div>
+  
   </div>
   <!--CONTACT-->
-  <div class="container-fluid bg-grey">
-    <h2 class="section-header">Contact.</h2>
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="section-header">Say hi.</h2>
     <br>
     <br>
     <br>
     <br>
     <div class="row">
       <div class="col-sm-5">
-        <p>Contact me and I'll get back to you within 24 hours.</p>
-        <p><i class="fas fa-map-marker-alt"></i> Austin, Texas, US</p>
-        <p><i class="fas fa-mobile-alt"></i> (210) 268-5513</p>
-        <p><i class="far fa-envelope"></i> <hoffmangnikolas@gmail class="com">hoffmangnikolas@gmail.com</hoffmangnikolas@gmail></p>
+        <p>Like what you see? Please feel free to say hi!<br>
+          I am actively pursuing my next endeavor and would love to 
+          hear about any new opportunities you may have for me.<br><br>
+          Contact me and I'll get back to you within 24 hours.</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Austin, Texas, US
+        </p>
+        <p>
+          <i class="fas fa-mobile-alt"></i> (210) 268-5513
+        </p>
+        <p>
+          <a href="mailto:hoffmangnikolas@gmail.com" target="_blank" style="text-decoration: none; color: #777">
+            <i class="far fa-envelope"></i> hoffmangnikolas@gmail.com
+          </a>
+        </p>
+        <p>
+          <a href="" style="text-decoration: none; color: #777" download>
+            <i class="far fa-file"></i> Download Resume
+          </a>
+        </p>
       </div>
+      <div class="col-sm-4">
+          <img class="img1" src="img/profile2.jpeg" alt="profile picture" loading="lazy">
+        </div>
     </div>
-    
   </div>
   <!--FOOTER-->
-  <!--FOOTER-->
   <footer id="footer">
-      <a href="https://www.linkedin.com/in/nikolas-hoffman-1723b3153/" target="_blank" style="text-decoration: none; color: #777">
-          <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/hoffmangnikolas" target="_blank" style="text-decoration: none; color: #777">
-          <i class="fab fa-github-square"></i>
-      </a>
-      <a href="https://www.facebook.com/nhoffman24/" target="_blank" style="text-decoration: none; color: #777">
-          <i class="fab fa-facebook-square"></i>
-      </a>
-      <a href="mailto:hoffmangnikolas@gmail.com" target="_blank" style="text-decoration: none; color: #777">
-          <i class="fas fa-envelope-square"></i>
-      </a>
-      <br/>
+    <a href="#myPage" title="To Top" style="text-decoration: none; color: #777">
       <i class="fas fa-glasses"></i>
-      <span><br />&copy;2021 Nikolas Hoffman</span>
+    </a>
+    <br/>
+    <a href="https://www.linkedin.com/in/nikolas-hoffman-1723b3153/" target="_blank" style="text-decoration: none; color: #777">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/hoffmangnikolas" target="_blank" style="text-decoration: none; color: #777">
+      <i class="fab fa-github-square"></i>
+    </a>
+    <a href="https://www.facebook.com/nhoffman24/" target="_blank" style="text-decoration: none; color: #777">
+      <i class="fab fa-facebook-square"></i>
+    </a>
+    <a href="mailto:hoffmangnikolas@gmail.com" target="_blank" style="text-decoration: none; color: #777">
+      <i class="fas fa-envelope-square"></i>
+    </a>
+    <span><br />&copy;2021 Nikolas Hoffman</span>
   </footer>
 
 
