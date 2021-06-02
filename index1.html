@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nikolas Hoffman</title>
+    <link rel="icon" href="img/paperplane.svg">
+    <title>Nikolas Hoffman | Software Developer</title>
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--BOOTSTRAP CSS-->
@@ -14,18 +15,23 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="timelinestyle.css">
+    <link rel="stylesheet" href="timeline.css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="">
   <!--NAV-->
   <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color navbar-right fixed-top">
     
     
-    <a class="navbar-brand" href="#myPage">NGH</a>
+    <a class="navbar-brand" href="#myPage" style="margin-left: 5px;">
+      <i class="far fa-paper-plane"></i>
+    </a>
     <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
       <ul class="navbar-nav d-flex mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#skills">Skills</a>
@@ -58,14 +64,14 @@
     <div style="text-align: center; padding: 175px 0;">
       <h1 style="font-size: 56px;">Nikolas Hoffman</h1>
       <p style="font-size: 20px;">Software Developer | Account Manager | Trail Runner</p>
+      <img src="https://media.giphy.com/media/gINzAthcIJvqjSZjc1/giphy.gif" style="max-width: 325px; float:right; position:relative; top: -275px;">
     </div>
   </div>
   <!--ABOUT-->
-  <div id="about" class="container-fluid" style="height: 100vh;">
+  <div id="about" class="container-fluid" style="height: 100vh; margin-bottom: 150px;">
     <div class="row">
       <div class="col-sm-8">
           <h2 class="section-header">About.</h2>
-          <br>
           <br>
           <br>
           <br>
@@ -83,10 +89,96 @@
       </div>
     </div>
   </div>
+  <!--EXPERIENCE-->
+  <div id="experience" class="container-fluid" style="height: 100vh; margin-bottom: 1025px;">
+    <h2 class="section-header">Experience.</h2>
+    <br>
+    <ul class="timeline">
+        <!-- Item 1 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Software Development Bootcamp</span>
+              <span class="time-wrapper"><span class="time">Sep 2020</span></span>
+            </div>
+            <div class="desc">
+              <h5>Student / Collaborator</h5>
+                HTML, CSS, SemanticUI,
+                Responsive Design,
+                Flexbox,
+                CSS Grid,
+                Bootstrap,
+                DOM Manipulation,
+                Javascript,
+                Asynch JS,
+                HTTP/JSON/AJAX,
+                React + Redux + React Hooks,
+                Git + Github,
+                CLI,
+                Node.js,
+                Express.js,
+                NPM,
+                RESTful API Design,
+                PostgresSQL,
+                SQL,
+                Authentication,
+                Authorization,
+                Scalable Infrastructure,
+                Security,
+                Production + Deployment
+              </div>
+          </div>
+        </li>
+      
+        <!-- Item 2 -->
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Willwork Global Event Services</span>
+              <span class="time-wrapper"><span class="time">Sep 2019 - Mar 2020</span></span>
+            </div>
+            <div class="desc">
+              <h5>Account Manager</h5>
+              - Prepared estimates and cost projections.
+              <br>
+              - Facilitated and managed I&D labor for high profile client events.
+              <br>
+              - Worked collaboratively with clients during their onboarding process to provide customized training on aspects of trade shows, private events, and I&D labor.
+              <br>
+              - Provided on-site management and facilitated completion of all aspects of the project(s).
+            </div>
+          </div>
+        </li>
+      
+        <!-- Item 3 -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Edgenuity Inc.</span>
+              <span class="time-wrapper"><span class="time">May 2018 - Mar 2019</span></span>
+            </div>
+            <div class="desc">
+              <h5>Account Manager</h5>
+              - Acted as client’s main point of contact, advocate, and guide throughout their account life-cycle to ensure complete understanding of products
+              <br>
+              - Managed and supported SE + Midwest North American sales pipelines
+              <br>
+              - Coordinated and facilitated all tasks associated with initial + on-going implementation including but not limited to on-boarding, rostering, professional development training, product expansions/integration add-ons, and day-to-day customer maintenance assistance
+              <br>
+              - Facilitated set-up of third party assessment APIs (NWEA MAP, Renaissance STAR, and Scantron) within product Learning Management System
+              <br>
+              - Worked in partnership with Superintendents, Principals, Curriculum Directors, and Technology Directors to build and maintain staff engagement resulting in increased utilizations and renewals
+            </div>
+          </div>
+        </li>
+      </ul>
+  </div>
   <!--SKILLS-->
   <div id="skills" class="container-fluid text-center" style="height: 100vh;">
     <h2 class="section-header">Skills.</h2>
-    <br>
     <br>
     <br>
     <br>
@@ -124,7 +216,6 @@
   <!--CONTACT-->
   <div id="contact" class="container-fluid bg-grey">
     <h2 class="section-header">Say hi.</h2>
-    <br>
     <br>
     <br>
     <br>
@@ -167,9 +258,6 @@
     </a>
     <a href="https://github.com/hoffmangnikolas" target="_blank" style="text-decoration: none; color: #777">
       <i class="fab fa-github-square"></i>
-    </a>
-    <a href="https://www.facebook.com/nhoffman24/" target="_blank" style="text-decoration: none; color: #777">
-      <i class="fab fa-facebook-square"></i>
     </a>
     <a href="mailto:hoffmangnikolas@gmail.com" target="_blank" style="text-decoration: none; color: #777">
       <i class="fas fa-envelope-square"></i>
